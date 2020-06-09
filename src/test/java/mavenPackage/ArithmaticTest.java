@@ -14,7 +14,7 @@ public class ArithmaticTest {
 		
 		p=x+y;
 		
-		System.out.println("summation is : "+p);
+		System.out.println("Addition is : "+p);
 	}
 	@Test(enabled=false)
 	public void sub()
@@ -22,7 +22,7 @@ public class ArithmaticTest {
 		
 		p=x-y;
 		
-		System.out.println("substraction is : "+p);
+		System.out.println("Substraction is : "+p);
 	}
 	
 	@Test(dependsOnMethods= {"add"})
@@ -40,7 +40,7 @@ public class ArithmaticTest {
 		
 		p=100%5;
 		
-		System.out.println("div is : "+p);
+		System.out.println("Division is : "+p);
 		
 	    
 	}
