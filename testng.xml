@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SystemTestSuite">
+<groups>
+  <run>
+   <exclude name="Regression"/>
+  </run>
+</groups>
+<parameter name="url" value="www.gmail.com"/>
+<parameter name="browser" value="chrome"/>
+<listeners>
+  <listener class-name="mavenPackage.Listeners"/>
+</listeners>
+
+  <test name="RegressionTests">
+  <groups>
+    <run>
+      <exclude name="Sanity"/>
+    </run>
+ </groups>
+    <classes>
+      <class name="mavenPackage.TravelTest"/>
+      <class name="mavenPackage.MatrimonyTest"/>
+      <class name="mavenPackage.ArithmaticTest"/>
+      <class name="mavenPackage.CricketTest"/>
+    </classes>
+  </test> 
+ <test name="SmokeTests">
+ <groups>
+    <run>
+      <exclude name="Smoke"/>
+    </run>
+ </groups>
+    <classes>
+      <class name="mavenPackage.TravelTest"/>
+      <class name="mavenPackage.MatrimonyTest"/>
+    </classes>
+ </test>
+<test name="SanityTests">
+    <classes>
+      <class name="mavenPackage.ArithmaticTest"/>
+      <class name="mavenPackage.CricketTest">
+           <methods>
+                 <exclude name ="EnjoyTravelling"/>
+           </methods>
+      </class>
+    </classes>
+ </test>
+</suite> 

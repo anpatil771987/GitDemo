@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="14" total="26" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SystemTestSuite" duration-ms="657" started-at="2020-05-21T09:05:31 IST" finished-at="2020-05-21T09:05:32 IST">
+    <groups>
+      <group name="Sanity">
+        <method signature="MatrimonyTest.enjoyMatrimony()[pri:0, instance:mavenPackage.MatrimonyTest@4a52ec]" name="enjoyMatrimony" class="mavenPackage.MatrimonyTest"/>
+        <method signature="TravelTest.EnjoyTravelling()[pri:0, instance:mavenPackage.TravelTest@f2b07d]" name="EnjoyTravelling" class="mavenPackage.TravelTest"/>
+      </group> <!-- Sanity -->
+      <group name="Smoke">
+        <method signature="ArithmaticTest.add()[pri:0, instance:mavenPackage.ArithmaticTest@aa12dd]" name="add" class="mavenPackage.ArithmaticTest"/>
+        <method signature="CricketTest.CricketRegister(java.lang.String)[pri:0, instance:mavenPackage.CricketTest@1d7a715]" name="CricketRegister" class="mavenPackage.CricketTest"/>
+        <method signature="MatrimonyTest.registerMatrimony()[pri:0, instance:mavenPackage.MatrimonyTest@11276c2]" name="registerMatrimony" class="mavenPackage.MatrimonyTest"/>
+        <method signature="TravelTest.TravelRegister()[pri:0, instance:mavenPackage.TravelTest@3a4799]" name="TravelRegister" class="mavenPackage.TravelTest"/>
+        <method signature="ArithmaticTest.add()[pri:0, instance:mavenPackage.ArithmaticTest@5fd85d]" name="add" class="mavenPackage.ArithmaticTest"/>
+        <method signature="CricketTest.CricketRegister(java.lang.String)[pri:0, instance:mavenPackage.CricketTest@18c1321]" name="CricketRegister" class="mavenPackage.CricketTest"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="RegressionTests" duration-ms="141" started-at="2020-05-21T09:05:31 IST" finished-at="2020-05-21T09:05:31 IST">
+      <class name="mavenPackage.MatrimonyTest">
+        <test-method status="PASS" signature="registerMatrimony()[pri:0, instance:mavenPackage.MatrimonyTest@11276c2]" name="registerMatrimony" duration-ms="6" started-at="2020-05-21T09:05:31 IST" finished-at="2020-05-21T09:05:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerMatrimony -->
+      </class> <!-- mavenPackage.MatrimonyTest -->
+      <class name="mavenPackage.CricketTest">
+        <test-method status="PASS" signature="CricketRegister(java.lang.String)[pri:0, instance:mavenPackage.CricketTest@1d7a715]" name="CricketRegister" duration-ms="4" started-at="2020-05-21T09:05:31 IST" finished-at="2020-05-21T09:05:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CricketRegister -->
+      </class> <!-- mavenPackage.CricketTest -->
+      <class name="mavenPackage.TravelTest">
+        <test-method status="PASS" signature="TravelRegister()[pri:0, instance:mavenPackage.TravelTest@3a4799]" name="TravelRegister" duration-ms="14" started-at="2020-05-21T09:05:31 IST" finished-at="2020-05-21T09:05:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TravelRegister -->
+      </class> <!-- mavenPackage.TravelTest -->
+      <class name="mavenPackage.ArithmaticTest">
+        <test-method status="PASS" signature="add()[pri:0, instance:mavenPackage.ArithmaticTest@aa12dd]" name="add" duration-ms="3" started-at="2020-05-21T09:05:31 IST" finished-at="2020-05-21T09:05:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="mult()[pri:0, instance:mavenPackage.ArithmaticTest@aa12dd]" name="mult" duration-ms="3" started-at="2020-05-21T09:05:31 IST" depends-on-methods="mavenPackage.ArithmaticTest.add" finished-at="2020-05-21T09:05:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mult -->
+        <test-method status="PASS" signature="div()[pri:0, instance:mavenPackage.ArithmaticTest@aa12dd]" name="div" duration-ms="2" started-at="2020-05-21T09:05:31 IST" depends-on-methods="mavenPackage.ArithmaticTest.mult" finished-at="2020-05-21T09:05:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- div -->
+      </class> <!-- mavenPackage.ArithmaticTest -->
+    </test> <!-- RegressionTests -->
+    <test name="SmokeTests" duration-ms="25" started-at="2020-05-21T09:05:32 IST" finished-at="2020-05-21T09:05:32 IST">
+      <class name="mavenPackage.MatrimonyTest">
+        <test-method status="PASS" signature="enjoyMatrimony()[pri:0, instance:mavenPackage.MatrimonyTest@4a52ec]" name="enjoyMatrimony" duration-ms="4" started-at="2020-05-21T09:05:32 IST" finished-at="2020-05-21T09:05:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enjoyMatrimony -->
+      </class> <!-- mavenPackage.MatrimonyTest -->
+      <class name="mavenPackage.TravelTest">
+        <test-method status="PASS" signature="EnjoyTravelling()[pri:0, instance:mavenPackage.TravelTest@f2b07d]" name="EnjoyTravelling" duration-ms="4" started-at="2020-05-21T09:05:32 IST" finished-at="2020-05-21T09:05:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnjoyTravelling -->
+      </class> <!-- mavenPackage.TravelTest -->
+    </test> <!-- SmokeTests -->
+    <test name="SanityTests" duration-ms="18" started-at="2020-05-21T09:05:32 IST" finished-at="2020-05-21T09:05:32 IST">
+      <class name="mavenPackage.CricketTest">
+        <test-method status="PASS" signature="CricketRegister(java.lang.String)[pri:0, instance:mavenPackage.CricketTest@18c1321]" name="CricketRegister" duration-ms="1" started-at="2020-05-21T09:05:32 IST" finished-at="2020-05-21T09:05:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CricketRegister -->
+      </class> <!-- mavenPackage.CricketTest -->
+      <class name="mavenPackage.ArithmaticTest">
+        <test-method status="PASS" signature="add()[pri:0, instance:mavenPackage.ArithmaticTest@5fd85d]" name="add" duration-ms="2" started-at="2020-05-21T09:05:32 IST" finished-at="2020-05-21T09:05:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- add -->
+        <test-method status="PASS" signature="mult()[pri:0, instance:mavenPackage.ArithmaticTest@5fd85d]" name="mult" duration-ms="1" started-at="2020-05-21T09:05:32 IST" depends-on-methods="mavenPackage.ArithmaticTest.add" finished-at="2020-05-21T09:05:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mult -->
+        <test-method status="PASS" signature="div()[pri:0, instance:mavenPackage.ArithmaticTest@5fd85d]" name="div" duration-ms="2" started-at="2020-05-21T09:05:32 IST" depends-on-methods="mavenPackage.ArithmaticTest.mult" finished-at="2020-05-21T09:05:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- div -->
+      </class> <!-- mavenPackage.ArithmaticTest -->
+    </test> <!-- SanityTests -->
+  </suite> <!-- SystemTestSuite -->
+</testng-results>

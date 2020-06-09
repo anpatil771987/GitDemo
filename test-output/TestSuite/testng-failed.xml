@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test thread-count="5" name="Tests(failed)">
+    <classes>
+      <class name="mavenPackage.TestScript5_SoftDependency">
+        <methods>
+          <include name="Register"/>
+        </methods>
+      </class> <!-- mavenPackage.TestScript5_SoftDependency -->
+      <class name="mavenPackage.TestScript2_DependsOnMethods">
+        <methods>
+          <include name="Register"/>
+        </methods>
+      </class> <!-- mavenPackage.TestScript2_DependsOnMethods -->
+      <class name="mavenPackage.TestScript1_PriorityConcept">
+        <methods>
+          <include name="add"/>
+          <include name="initiallization"/>
+          <include name="EndTest"/>
+          <include name="EndMethod"/>
+          <include name="InitialMethod"/>
+        </methods>
+      </class> <!-- mavenPackage.TestScript1_PriorityConcept -->
+      <class name="mavenPackage.TestScript4_SoftAssertConcept">
+        <methods>
+          <include name="Register"/>
+        </methods>
+      </class> <!-- mavenPackage.TestScript4_SoftAssertConcept -->
+      <class name="mavenPackage.TestScript3_HardAssertConcept">
+        <methods>
+          <include name="Register"/>
+        </methods>
+      </class> <!-- mavenPackage.TestScript3_HardAssertConcept -->
+    </classes>
+  </test> <!-- Tests(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
